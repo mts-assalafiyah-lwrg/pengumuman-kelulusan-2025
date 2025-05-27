@@ -437,10 +437,10 @@
             }
             
             // Time check (commented out for testing purposes)
-            // if (currentDate < announcementDate) {
-            //     timeWarningDiv.classList.remove('hidden');
-            //     return;
-            // }
+            if (currentDate < announcementDate) {
+                timeWarningDiv.classList.remove('hidden');
+                return;
+            }
             
             // Find student
             const student = students.find(s => s.nisn === nisn && s.tanggalLahir === birthdate);
